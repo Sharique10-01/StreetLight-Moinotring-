@@ -1,21 +1,22 @@
+/* src/app/components/SignIn/SignIn.module.css */
+
 .container {
   max-width: 400px;
-  margin: auto;
+  margin: 0 auto;
   padding: 20px;
-  border: 1px solid #ccc;
-  border-radius: 8px;
   background-color: #f9f9f9;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .header {
   text-align: center;
   margin-bottom: 20px;
-  font-size: 24px;
 }
 
 .error {
-  color: red; /* Style for error messages */
+  color: red;
+  text-align: center;
   margin-bottom: 10px;
 }
 
@@ -25,23 +26,21 @@
 }
 
 .input {
-  margin-bottom: 15px;
+  margin: 10px 0;
   padding: 10px;
   border: 1px solid #ccc;
   border-radius: 4px;
-  font-size: 16px;
 }
 
 .button {
   padding: 10px;
-  border: none;
-  border-radius: 4px;
   background-color: #0070f3;
   color: white;
-  font-size: 16px;
+  border: none;
+  border-radius: 4px;
   cursor: pointer;
 }
 
 .button:disabled {
-  background-color: #ccc; /* Change button style when disabled */
+  background-color: #d3d3d3;
 }

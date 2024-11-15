@@ -1,7 +1,9 @@
+/* globals.css */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
+/* Custom variables for background */
 :root {
   --background: #ffffff;
   --foreground: #171717;
@@ -17,5 +19,34 @@
 body {
   color: var(--foreground);
   background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Arial', Helvetica, sans-serif;
+  margin: 0;  /* Remove default margin */
+  display: flex; /* Use flexbox on body */
+  flex-direction: column; /* Stack elements vertically */
+  height: 100vh; /* Full viewport height */
+}
+
+#__next {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Make sure it takes the full height of the viewport */
+}
+
+/* Ensuring consistency for the entire app */
+* {
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+/* Any specific styles for your navbar or other elements can go here */
+.navbar {
+  background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent navbar */
+  color: #fff;
 }

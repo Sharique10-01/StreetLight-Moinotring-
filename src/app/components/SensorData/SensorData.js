@@ -119,18 +119,19 @@ const SensorData = () => {
 
   return (
     <div className="p-6 bg-white rounded-lg shadow-md">
-      <h2 className="text-2xl font-bold text-center mb-6">Sensor Data Overview</h2>
-      <div className="flex justify-between">
-        <div className="w-1/2 pr-2">
-          <h3 className="text-xl mb-4 text-center">Moisture Level</h3>
-          <Line data={moistureChartData} options={moistureChartOptions} />
-        </div>
-        <div className="w-1/2 pl-2">
-          <h3 className="text-xl mb-4 text-center">Temperature</h3>
-          <Bar data={temperatureChartData} options={temperatureChartOptions} />
-        </div>
-      </div>
+  <h2 className="text-2xl font-bold text-center  text-gray-600 mb-6">Sensor Data Overview</h2>
+  <div className="flex justify-between">
+    <div className="w-1/2 pr-2">
+      <h3 className="text-xl mb-4 text-center text-gray-800">Moisture Level</h3> {/* Darker text */}
+      <Line data={moistureChartData} options={moistureChartOptions} />
     </div>
+    <div className="w-1/2 pl-2">
+      <h3 className="text-xl mb-4 text-center text-gray-800">Temperature</h3> {/* Darker text */}
+      <Bar data={temperatureChartData} options={temperatureChartOptions} />
+    </div>
+  </div>
+</div>
+
   );
 };
 

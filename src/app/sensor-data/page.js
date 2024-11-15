@@ -8,7 +8,7 @@ import DashboardLayout from '../components/DashboardLayout';
 const SensorDataPage = () => {
   return (
     <DashboardLayout>
-      <h2 className="text-xl font-bold mb-4">Sensor Readings</h2>
+      <h2 className="text-xl font-bold mb-4  text-gray-600 ">Sensor Readings</h2>
       <SensorData />
     </DashboardLayout>
   );
